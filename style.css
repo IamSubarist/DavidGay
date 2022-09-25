@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 75%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/******************************************** HEADER ********************************************/
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 35px 0;
+    color: #283a5e;
+}
+
+.header__nav-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav-link{
+    list-style-type: none;
+}
+
+.header__nav-link-a{
+    padding: 0 25px;
+    color: #283a5e;
+}
+
+.header__nav-link-a:hover{
+    transition: .5s;
+    color: #00d690;
+}
+
+.header__buttons-img{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+/******************************************** NAME_PAGE ********************************************/
+
+.name_page{
+    width: 95%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url(img/namepage.png);
+    color: white;
+}
+
+.name_page__name{
+    font-size: 250%;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.name_page__bread_crumbs{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style-type: none;
+    font-size: 100%;
+}
+
+.bread_crumbs__link > a{
+    color: inherit;
+}
+
+.bread_crumbs__link > a:hover{
+    transition: .5s;
+    color: #00d690;
+}
+
+.bread_crumbs__link:first-child:before {
+    display: none;
+}
+
+.bread_crumbs__link:before {
+    content: '/';
+    margin-right: 15px;
+}
+
+/******************************************** ABOUT US ********************************************/
+
+.about_us{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.about_us__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.name{
+    color: #00d690;
+    font-size: 120%;
+}
+
+.heading{
+    font-size: 350%;
+    font-weight: bold;
+    color: #283a5e;
+}
+
+.about_us__content-text{
+    font-size: 120%;
+    color: #666666;
+}
+
+.about_us__content-button-link{
+    padding: 20px 30px;
+    background-color: #00d690;
+    color: white;
+    font-size: 120%;
+}
+
+/******************************************** SERVICES ********************************************/
+
+.services{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.services__item{
+    position: relative;
+    padding: 0 1px;
+}
+
+.services__item-img{
+    width: 100%;
+}
+
+.services__item-button{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.services__item-button > a{
+    color: #283a5e;
+    padding: 15px 30px;
+    background-color: white;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/******************************************** OUR ROOMS ********************************************/
+
+.our_rooms{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 140px;
+}
+
+.our_rooms__cards{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.our_rooms__card{
+    position: relative;
+}
+
+.our_rooms__card-text{
+    position: absolute;
+    top: 78%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 20px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 170%;
+    color: #283a5e;
+}
+
+.our_rooms__list{
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.our_rooms__list-link > a{
+    color: #666666;
+}
+
+.our_rooms__list-link > a:hover{
+    color: #00d690;
+    transition: .5s;
+}
+
+/******************************************** ACHIEVEMENTS ********************************************/
+
+.achievements{
+    margin-top: 140px;
+    background-image: url(img/achievements.jpg);
+    height: 500px;
+}
+
+.achievements__items{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
