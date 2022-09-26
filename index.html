@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
     <title>About Us</title>
 </head>
 <body>
@@ -130,43 +135,246 @@
         <div class="container">
             <div class="achievements__items">
                 <div class="achievements__item">
-                    <img src="" alt="" class="achievements__item-img">
-                    <div class="achievements__item-count">
-                        <p>205+</p>
-                    </div>
-                    <div class="achievements__item-text">
-                        <p>Amazing Rooms</p>
-                    </div>
+                    <img src="img/key.png" alt="Картинка" class="achievements__item-img">
+                    <p class="achievements__item-count">205+</p>
+                    <p class="achievements__item-text">Amazing Rooms</p>
                 </div>
                 <div class="achievements__item">
-                    <img src="" alt="" class="achievements__item-img">
-                    <div class="achievements__item-count">
-                        <p>560+</p>
-                    </div>
-                    <div class="achievements__item-text">
-                        <p>Dadicated Staffs</p>
-                    </div>
+                    <img src="img/sotrudnik.png" alt="Картинка" class="achievements__item-img">
+                    <p class="achievements__item-count">560+</p>
+                    <p class="achievements__item-text">Dadicated Staffs</p>
                 </div>
                 <div class="achievements__item">
-                    <img src="" alt="" class="achievements__item-img">
-                    <div class="achievements__item-count">
-                        <p>180+</p>
-                    </div>
-                    <div class="achievements__item-text">
-                        <p>Delicious Food</p>
-                    </div>
+                    <img src="img/bowling.png" alt="Картинка" class="achievements__item-img">
+                    <p class="achievements__item-count">180+</p>
+                    <p class="achievements__item-text">Delicious Food</p>
                 </div>
                 <div class="achievements__item">
-                    <img src="" alt="" class="achievements__item-img">
-                    <div class="achievements__item-count">
-                        <p>5+</p>
+                    <img src="img/swimming pool.png" alt="Картинка" class="achievements__item-img">
+                    <p class="achievements__item-count">5+</p>
+                    <p class="achievements__item-text">Swimming Pools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__name name">What Say Clients</div>
+            <div class="reviews__heading heading">Our Clients are Important to Us</div>
+            <div class="reviews__slider">
+                <div class="reviews__slider-item">
+                    <div class="reviews__slider-item-rate">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
                     </div>
-                    <div class="achievements__item-text">
-                        <p>Swimming Pools</p>
+                    <div class="reviews__slider-item-comment">
+                        <p>“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”</p>
+                    </div>
+                    <div class="reviews__slider-item-user">
+                        <img class="user__photo" src="img/user1.jpg" alt="user">
+                        <div class="user__data">
+                            <p class="user__name">Benjir Walton</p>
+                            <p class="user__country">Singapore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <div class="reviews__slider-item-rate">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                    </div>
+                    <div class="reviews__slider-item-comment">
+                        <p>“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”</p>
+                    </div>
+                    <div class="reviews__slider-item-user">
+                        <img class="user__photo" src="img/user2.jpg" alt="user">
+                        <div class="user__data">
+                            <p class="user__name">Jenefar Meera</p>
+                            <p class="user__country">Canada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <div class="reviews__slider-item-rate">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                    </div>
+                    <div class="reviews__slider-item-comment">
+                        <p>“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”</p>
+                    </div>
+                    <div class="reviews__slider-item-user">
+                        <img class="user__photo" src="img/user3.jpg" alt="user">
+                        <div class="user__data">
+                            <p class="user__name">Lily Monalisa</p>
+                            <p class="user__country">Singapore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider-item">
+                    <div class="reviews__slider-item-rate">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                        <img src="img/star.png" alt="star">
+                    </div>
+                    <div class="reviews__slider-item-comment">
+                        <p>“The trip was incredible. I got to see so many places I wouldn't have by myself, me and my husband really enjoyed a lot.”</p>
+                    </div>
+                    <div class="reviews__slider-item-user">
+                        <img class="user__photo" src="img/user1.jpg" alt="user">
+                        <div class="user__data">
+                            <p class="user__name">Benjir Walton</p>
+                            <p class="user__country">Singapore</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <img src="img/footer-logo.png" alt="Лого" class="footer__top-logo">
+                <div class="footer__top-sociallinks-list">
+                    <a class="footer__top-sociallinks-link" href="#">
+                        <svg class="footer__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                            <path d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+                            v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+                            C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+                        </svg>   
+                    <a>
+                    <a class="footer__top-sociallinks-link" href="#">
+                        <svg class="footer__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                            <path d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+                                c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+                                c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+                                c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+                                c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+                                c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+                                c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+                                C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+                        </svg>
+                    <a>
+                    <a class="footer__top-sociallinks-link" href="#">
+                        <svg class="footer__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
+                            <path d="M195.93,63.708H95.38c-17.47,0-31.672,14.211-31.672,31.672v100.56
+                                c0,17.47,14.211,31.672,31.672,31.672h100.56c17.47,0,31.672-14.211,31.672-31.672V95.38
+                                C227.611,77.919,213.4,63.708,195.93,63.708z M205.908,82.034l3.587-0.009v27.202l-27.402,0.091l-0.091-27.202
+                                C182.002,82.116,205.908,82.034,205.908,82.034z M145.66,118.239c22.732,0,27.42,21.339,27.42,27.429
+                                c0,15.103-12.308,27.411-27.42,27.411c-15.121,0-27.42-12.308-27.42-27.411C118.23,139.578,122.928,118.239,145.66,118.239z
+                                M209.65,193.955c0,8.658-7.037,15.704-15.713,15.704H97.073c-8.667,0-15.713-7.037-15.713-15.704v-66.539h22.759
+                                c-2.112,5.198-3.305,12.299-3.305,18.253c0,24.708,20.101,44.818,44.818,44.818s44.808-20.11,44.808-44.818
+                                c0-5.954-1.193-13.055-3.296-18.253h22.486v66.539L209.65,193.955z"/>
+                        </svg>
+                    </a>
+                    <a class="footer__top-sociallinks-link" href="#">
+                        <svg class="footer__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve">
+                            <path d="M71.919,186.626c-21.849-21.849-21.849-60.085,0.91-81.933
+                                c16.387-16.387,40.056-20.028,60.995-11.835l8.193,4.552l9.104,6.373l-14.566,14.566l-5.462-3.641
+                                c-12.745-8.193-30.953-6.373-42.787,5.462c-13.656,13.656-14.566,38.236,0,52.802c13.656,14.566,38.236,14.566,50.981,0
+                                c3.641-3.641,7.283-9.104,8.193-14.566v-1.821h-32.773v-18.207h51.891l0.91,4.552v12.745c-0.91,11.835-5.462,23.67-13.656,31.863
+                                C132.004,208.475,93.768,208.475,71.919,186.626z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer__middle">
+                <div class="contact">
+                    <p class="footer__middle-name">Contact</p>
+                    <p class="contact__desc">online store with lots of cool and exclusive features</p>
+                    <div class="contact__items">
+                        <div class="contact__item">
+                            <img class="contact__icons" src="img/location.png" alt="Картинка">
+                            <p>28 Street, New York City, USA</p>
+                        </div>
+                        <div class="contact__item">
+                            <img class="contact__icons" src="img/phone.png" alt="Картинка">
+                            <p>+000123456789</p>
+                        </div>
+                        <div class="contact__item">
+                            <img class="contact__icons" src="img/mail.png" alt="Картинка">
+                            <p>Hastium@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <p class="footer__middle-name">Destination</p>
+                    <div class="destination__items">
+                        <div class="destination__item">
+                            <img src="img/destination1.jpg" alt="Картинка">
+                            <div class="destination__desc">
+                                <p class="destination__desc-geo">Paris, France</p>
+                                <p class="destination__desc-date">11 Jun 2020 - 22 Jun 2020</p>
+                                <p class="destination__desc-price">$835</p>
+                            </div>
+                        </div>
+                        <div class="destination__item">
+                            <img src="img/destination2.jpg" alt="Картинка">
+                            <div class="destination__desc">
+                                <p class="destination__desc-geo">San Francisco</p>
+                                <p class="destination__desc-date">11 Jun 2020 - 22 Jun 2020</p>
+                                <p class="destination__desc-price">$835</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="usefullinks">
+                    <p class="footer__middle-name">Useful Links</p>
+                    <ul class="usefullinks__list">
+                        <li class="usefullinks__link"><a href="#">About Us</a></li>
+                        <li class="usefullinks__link"><a href="#">Our Offers</a></li>
+                        <li class="usefullinks__link"><a href="#">How Spread</a></li>
+                        <li class="usefullinks__link"><a href="#">Contact Us</a></li>
+                        <li class="usefullinks__link"><a href="#">Our Event</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <p class="footer__middle-name">Newsletter</p>
+                    <input class="newsletter__input" type="text" placeholder="Email Address *">
+                    <div class="newsletter__button">
+                        <div class="newsletter__button-link">
+                            <a href="#">Subscribe</a>
+                        </div>
+                        <div class="newsletter__button-arrow">❯</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom">
+                <div class="footer__bottom-links">
+                    <a href="#" class="footer__bottom-link">Privecy Policy</a>
+                    <a href="#" class="footer__bottom-link">Terms & Condition</a>
+                    <a href="#" class="footer__bottom-link">Cookies</a>
+                </div>
+                <div class="footer__bottom-copyright">
+                    <p>© 2020 Venom. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
-</html>

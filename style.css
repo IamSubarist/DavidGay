@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+li{
+    list-style-type: none;
+}
+
 /******************************************** HEADER ********************************************/
 
 .header{
@@ -46,9 +50,12 @@ a{
 }
 
 .header__buttons-img{
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     margin-left: 15px;
+    background-color: #ecfdf5;
+    padding: 15px;
+    border-radius: 50%;
 }
 
 /******************************************** NAME_PAGE ********************************************/
@@ -153,6 +160,7 @@ a{
 
 .services__item-img{
     width: 100%;
+    position: relative;
 }
 
 .services__item-button{
@@ -170,6 +178,36 @@ a{
     font-size: 120%;
     font-weight: bold;
 }
+
+.services__item-button > a:hover{
+    color: #ffffff;
+    background-color: #00d690;
+    transition: .5s;
+}
+
+/* .services__item-img:before, .services__item-img:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease-in-out;
+}
+.services__item-img:after{
+    top: auto;
+    bottom: 0;
+}
+.services__item-img:hover {
+    color: #d6ddc4;
+}
+.services__item-img:hover:before, .services__item-img:hover:after{
+    height: 80px;
+}
+.services__item-img:active {
+    background-color: #5b7512;
+} */
 
 /******************************************** OUR ROOMS ********************************************/
 
@@ -227,10 +265,287 @@ a{
     margin-top: 140px;
     background-image: url(img/achievements.jpg);
     height: 500px;
+    display: flex;
+    align-items: center;
 }
 
 .achievements__items{
     display: flex;
-    flex-direction: row;
     gap: 15px;
+}
+
+.achievements__item{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.achievements__item-img{
+    width: 50px;
+    height: 50px;
+}
+
+.achievements__item-count{
+    font-size: 220%;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+}
+
+/******************************************** REVIEWS ********************************************/
+
+.reviews{
+    margin-top: 140px;
+}
+
+.reviews__name{
+    margin-bottom: 20px;
+}
+
+.reviews__heading{
+    width: 500px;
+}
+
+.reviews__slider{
+    margin: 90px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.reviews__slider-item{
+    padding: 50px 40px;
+    border-bottom: 2px solid #00d690;
+}
+
+.reviews__slider-item:hover{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: .7s;
+}
+
+.reviews__slider-item-rate{
+    display: flex;
+    gap: 5px;
+}
+
+.reviews__slider-item-rate > img{
+    width: 20px;
+    height: 20px;
+}
+
+.reviews__slider-item-comment{
+    margin: 35px 0 55px 0;
+    font-size: 100%;
+    color: #666666;
+}
+
+.reviews__slider-item-user{
+    display: flex;
+    align-items: center;
+}
+
+.user__photo{
+    border-radius: 50%;
+}
+
+.user__data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.user__name{
+    text-transform: uppercase;
+    font-size: 130%;
+    color: #283a5e;
+}
+
+.user__country{
+    color: #666666;
+    font-size: 100%;
+}
+
+.slick-slide {
+    margin: 0 15px;
+}
+
+.slick-list {
+    margin: 0 -15px;
+}
+
+/******************************************** FOOTER ********************************************/
+
+.footer{
+    background-color: #1e3054;
+}
+
+#footer{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__top{
+    min-height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__top-sociallinks-list{
+    display: flex;
+    gap: 5px;
+}
+
+.footer__svg{
+    width: 60px;
+    height: 60px;
+    background-color: #283a5e;
+    fill: #ffffff;
+    border-radius: 50%;
+}
+
+.footer__svg:hover{
+    background-color: #ffffff;
+    fill: #1e3054;
+    transition: .5s;
+}
+
+.footer__middle{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.contact__items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 110%;
+}
+
+.contact__item{
+    display: flex;
+    gap: 15px;
+}
+
+.contact__desc{
+    width: 300px;
+    margin-bottom: 35px;
+    font-size: 110%;
+}
+
+.destination__item{
+    display: flex;
+}
+
+.footer__middle-name{
+    font-weight: bold;
+    font-size: 140%;
+    margin-bottom: 40px;
+}
+
+.contact__icons{
+    width: 20px;
+    height: 20px;
+}
+
+.destination__items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.destination__item{
+    display: flex;
+    gap: 15px;
+}
+
+.destination__desc-geo{
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.destination__desc-date{
+    color: #c4c4c4;
+    margin-top: 5px;
+}
+
+.destination__desc-price{
+    font-size: 110%;
+    font-weight: bold;
+    color: #00d690;
+    margin-top: 10px;
+}
+
+.usefullinks__list{
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.usefullinks__link a{
+    color: #ffffff;
+}
+
+.usefullinks__link a:hover{
+    text-decoration: underline;
+}
+
+.newsletter__input{
+    width: 330px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid #a5a5a5;
+    font-size: 110%;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.newsletter__button{
+    width: 330px;
+    height: 60px;
+    background-color: #00d690;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.newsletter__button-arrow{
+    padding: 19px;
+    background-color: #00ab72;
+}
+
+.newsletter__button-link a{
+    color: #ffffff;
+    font-size: 120%;
+    padding: 19px;
+}
+
+.footer__bottom{
+    background-color: #192b4e;
+    height: 80px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.footer__bottom-links{
+    display: flex;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.footer__bottom-link{
+    color: #ffffff;
 }
