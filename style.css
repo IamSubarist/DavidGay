@@ -22,7 +22,6 @@ li{
 
 .header{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     align-content: center;
@@ -32,11 +31,6 @@ li{
 
 .header__nav-list{
     display: flex;
-    flex-direction: row;
-}
-
-.header__nav-link{
-    list-style-type: none;
 }
 
 .header__nav-link-a{
@@ -60,7 +54,7 @@ li{
 
 /******************************************** NAME_PAGE ********************************************/
 
-.name_page{
+.namepage{
     width: 95%;
     height: 400px;
     margin: 0 auto;
@@ -70,51 +64,48 @@ li{
     align-content: center;
     justify-content: center;
     background-image: url(img/namepage.png);
-    color: white;
+    color: #ffffff;
 }
 
-.name_page__name{
+.namepage__name{
     font-size: 250%;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.name_page__bread_crumbs{
+.namepage__breadcrumbs{
     display: flex;
-    flex-direction: row;
     gap: 15px;
-    list-style-type: none;
     font-size: 100%;
 }
 
-.bread_crumbs__link > a{
+.breadcrumbs__link > a{
     color: inherit;
 }
 
-.bread_crumbs__link > a:hover{
+.breadcrumbs__link > a:hover{
     transition: .5s;
     color: #00d690;
 }
 
-.bread_crumbs__link:first-child:before {
+.breadcrumbs__link:first-child:before {
     display: none;
 }
 
-.bread_crumbs__link:before {
+.breadcrumbs__link:before {
     content: '/';
     margin-right: 15px;
 }
 
 /******************************************** ABOUT US ********************************************/
 
-.about_us{
+.aboutus{
     margin-top: 140px;
     display: flex;
-    flex-direction: row;
     gap: 70px;
 }
 
-.about_us__content{
+.aboutus__content{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -132,15 +123,15 @@ li{
     color: #283a5e;
 }
 
-.about_us__content-text{
+.aboutus__content-text{
     font-size: 120%;
     color: #666666;
 }
 
-.about_us__content-button-link{
+.aboutus__content-button-link{
     padding: 20px 30px;
     background-color: #00d690;
-    color: white;
+    color: #ffffff;
     font-size: 120%;
 }
 
@@ -174,7 +165,7 @@ li{
 .services__item-button > a{
     color: #283a5e;
     padding: 15px 30px;
-    background-color: white;
+    background-color: #ffffff;
     font-size: 120%;
     font-weight: bold;
 }
@@ -211,25 +202,24 @@ li{
 
 /******************************************** OUR ROOMS ********************************************/
 
-.our_rooms{
+.ourrooms{
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 140px;
 }
 
-.our_rooms__cards{
+.ourrooms__cards{
     display: flex;
-    flex-direction: row;
     gap: 15px;
     margin-top: 40px;
 }
 
-.our_rooms__card{
+.ourrooms__card{
     position: relative;
 }
 
-.our_rooms__card-text{
+.ourrooms__card-text{
     position: absolute;
     top: 78%;
     left: 0;
@@ -242,19 +232,17 @@ li{
     color: #283a5e;
 }
 
-.our_rooms__list{
+.ourrooms__list{
     margin-top: 20px;
-    list-style-type: none;
     display: flex;
-    flex-direction: row;
     gap: 20px;
 }
 
-.our_rooms__list-link > a{
+.ourrooms__list-link > a{
     color: #666666;
 }
 
-.our_rooms__list-link > a:hover{
+.ourrooms__list-link > a:hover{
     color: #00d690;
     transition: .5s;
 }
